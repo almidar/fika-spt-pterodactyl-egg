@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:10.0-bookworm-slim
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 # Pterodactyl/Pelican Panel compatible Dockerfile
 # Uses /home/container as working directory with container user
