@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:9.0-bookworm-slim
+FROM mcr.microsoft.com/dotnet/aspnet:10.0-bookworm-slim
 
 RUN apt update && apt install -y --no-install-recommends \
     curl \
@@ -12,8 +12,9 @@ RUN apt update && apt install -y --no-install-recommends \
     jq \
     dos2unix
 
-ARG SPT_VERSION=4.0.11-40087-278e72b
-ARG FIKA_VERSION=2.1.0
+ARG SPT_VERSION=4.1.2-40743-cf04a11
+
+ARG FIKA_VERSION=2.4.0
 ENV SPT_VERSION=$SPT_VERSION
 ENV FIKA_VERSION=$FIKA_VERSION
 
